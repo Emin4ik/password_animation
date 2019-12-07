@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<!-- Include JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--INCLUDE AWESOME FONT-FAMILY -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+<!-- INCLUDE JS FILE -->
+<script type="text/javascript" src="animate.js"></script>  
+
+<!-- INCLUDE MAIN CSS FILE -->
+<link rel="stylesheet" type="text/css" href="animate.css"/> 
+
+<!-- INCLUDE PAGE CSS FILE -->
+
+
+	<title>Password failure animation</title>
+</head>
+<body>
+<div class="container">
+<br>
+<div class="explain container">
+    
+    <div class="col-md-6">
+    
+    <span><h3><strong><ins>Getting start</ins></strong></h3></span>
+
+    <p><h4><ins><b>First:</b> include <strong>JQUERY</strong> then <strong>Bootstrap 3</strong> frameworks</ins></h4> 
+    <p>Can get from here: <b><ins><a href="https://www.w3schools.com/jquery/jquery_get_started.asp">JQUERY framework</a></b></ins></p>
+    <p><h4>or copy from here: <br><b><<code>script src="jquery-3.3.1.min.js"</code>><code><</code><code>/script></code></b></h4></p>
+    Can get from here: <b><ins><a href="http://getbootstrap.com/docs/3.3/getting-started/">Bootstrap 3 framework</a></b></ins></p>
+    <p><h4>or copy from here: </h4></p>
+    
+    <!-- Latest compiled and minified CSS -->
+    <<code>link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="   sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <br>
+    <!-- Optional theme -->
+    <<code>link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="   sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"></code>
+    <br>
+    <!-- Latest compiled and minified JavaScript -->
+    <code><</code>script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"><code><</code>/script</code>>
+    <br>
+    <hr>
+    <p><h4><ins><b>Second:</b> include my <strong>CSS</strong> and <strong>JS</strong> files</ins></h4></p>
+    <code><</code><code>script type="text/javascript" src="js/password_failure_main.js"><code><</code>/script</code><code>></code>
+    <br>
+    <code><</code><code>link rel="stylesheet" type="text/css" href="css/password_failure_main.css"<code>></code></code>
+    
+    </div>
+    <div class="col-md-6">
+
+      <p><h4><ins><b>Third:</b> now all you need is just add any class from list below to input and</ins> <code>class="<strong>btn_animate</strong>"</code><ins> to your button </ins></h4>
+      <span><ins><h3><b>Example of using animations</b></h3></ins></span>
+         <<code>input type="password" class="form-control <strong>input_break</strong>"</code>>
+         <br>
+         <<code>button class="<strong>btn_animate</strong>"</code>>Enter<<code>/button</code>>
+         <br>
+         <p><strong><h4><ins>List of animations:</ins></h4></strong></p>
+         <ul>
+            <li>   <h4><code>input_swing</code><h4>         </li> 
+            <li>   <h4><code>input_break </code><h4>        </li>
+            <li>   <h4><code>input_bounce_first </code><h4> </li>
+            <li>   <h4><code>input_shake </code><h4>        </li>
+            <li>   <h4><code>input_bounce_second </code><h4></li>
+            <li>   <h4><code>input_red </code><h4>          </li>
+            <li>   <h4><code>input_x </code><h4>            </li>
+            <li>   <h4><code>input_rev </code><h4>          </li>
+            <li>   <h4><code>input_decreas </code><h4>      </li>
+            <li>   <h4><code>input_swing180 </code><h4>     </li>
+            <li>   <h4><code>input_rev2 </code> <h4>        </li>
+         </ul
+         <hr>
+
+    </div>
+</div>
+<div class="row">
+	<div class="col-md-5">
+<br>
+		<!-- First-left form -->
+		<!-- input_swing -->
+ <div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_swing animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control input_swing" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+
+ 
+
+    <!-- Second-left form  -->
+	<!--  input_bounce_first -->
+ <div class="panel-group">
+    <form class="form">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_bounce_first animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control input_bounce_first" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+
+
+
+<!-- Third-left form  -->
+<!-- input_bounce_second -->
+ <div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_bounce_second animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control input_bounce_second" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+		
+			
+	<!-- Fourth-left form  -->
+		<!-- input_x -->
+ <div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_x animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control input_x" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+
+		
+		<!-- Fifth-left form  -->
+		<!-- input_decreas -->
+ <div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_decreas animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control input_decreas" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+			
+   
+	</div><!-- col-md-5 end -->
+ 
+
+
+
+
+	<div class="col-md-2"></div>
+
+	
+
+
+
+
+
+
+	<div class="col-md-5">
+  <br>
+		<!-- First-right form  -->
+		<!-- input_break -->
+ <div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_break animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control username_break" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control input_break" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+             
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+ 	<!-- Second-right form  -->
+	<!-- input_shake -->
+ <div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_shake animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control  input_shake" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+ 	<!-- Third-right form  -->
+	<!-- input_red -->
+<div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_red animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control  input_red" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+
+		<!-- Fourth-right form  -->
+		<!-- input_rev -->
+<div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_rev animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control  input_rev" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+			<!-- Fifth-right form  -->
+			<!-- btn_swing180 -->
+ <div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_swing180 animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control  input_swing180" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+
+
+		<!-- Sixth-right form  -->
+		<!-- input_rev2 -->
+<div class="panel-group">
+    <form class="form ">
+       <div class="panel panel-default">
+        	<div class="panel-heading">
+      			<span class="span_text">input_rev2 animation</span>
+        	</div>
+       	 <div class="panel-body">
+			  <!--<div class="form-group">
+			  	<input class="form-control" placeholder="username" type="text" name="Username">
+			  </div>-->
+			  <div class="form-group">
+			  	<input class="form-control input_rev2" placeholder="password" type="password" name="password" maxlength="25" ;>
+			  </div>
+	     </div>
+       		<div class="panel-footer">
+      	  		<div class="form-group">
+      		 		<button class="btn btn-primary btn_animate pull-right" type="button">Try It</button>
+	      		</div>
+        	</div>
+	   </div>
+    </form>
+ </div>
+
+
+
+</div>
+</body>
+</html>
